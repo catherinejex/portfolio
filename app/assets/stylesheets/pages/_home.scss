@@ -4,11 +4,13 @@
 
 .navbar-lewagon {
   justify-content: space-between;
-  background: #d6ccc2;
+  background: #70798c;
+  position: fixed;
+  width: 100%;
 }
 
 .nav-link {
-  color: #641220;
+  color: #f5f1ed;
 }
 
 .navbar-lewagon .navbar-collapse {
@@ -23,14 +25,16 @@
   background-size: cover;
   background-position: center;
   padding: 150px 0;
+  height: 700px;
 }
 
 .banner h1 {
   margin: 0;
-  color: white;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
-  font-size: 32px;
-  font-weight: bold;
+  color: #f5f1ed;
+  text-shadow: 5px 4px 3px rgba(0,0,0,0.2);
+  font-size: 150px;
+  font-family: 'Cookie', cursive;
+  text-align: center;
 }
 
 .banner p {
@@ -38,4 +42,32 @@
   color: white;
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  text-align: center;
+}
+
+.footer {
+  background: #F4F4F4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
+}
+.footer-links {
+  display: flex;
+  align-items: center;
+}
+.footer-links a {
+  color: black;
+  opacity: 0.15;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 0px 10px;
+}
+.footer-links a:hover {
+  opacity: 1;
+}
+.footer .fa-heart {
+  color: #D23333;
 }
