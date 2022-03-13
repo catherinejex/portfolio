@@ -233,7 +233,7 @@ GEM
 
 PLATFORMS
   arm64-darwin-21
-  bundle lock -unknown
+  bundle lock --add-platform x86_64-linux
 
 DEPENDENCIES
   autoprefixer-rails (= 10.2.5)
