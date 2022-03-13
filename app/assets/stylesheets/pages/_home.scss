@@ -2,25 +2,6 @@
   overscroll-behavior: none;
 }
 
-.navbar-lewagon {
-  justify-content: space-between;
-  background: #70798c;
-  position: fixed;
-  width: 100%;
-}
-
-.nav-link {
-  color: #f5f1ed;
-}
-
-.navbar-lewagon .navbar-collapse {
-  flex-grow: 0;
-}
-
-.navbar-lewagon .navbar-brand img {
-  width: 40px;
-}
-
 .banner {
   background-size: cover;
   background-position: center;
@@ -35,6 +16,7 @@
   font-size: 150px;
   font-family: 'Cookie', cursive;
   text-align: center;
+  padding-top: 92px;
 }
 
 .banner p {
@@ -43,31 +25,4 @@
   opacity: .7;
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   text-align: center;
-}
-
-.footer {
-  background: #F4F4F4;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 100px;
-  padding: 0px 50px;
-  color: rgba(0,0,0,0.3);
-}
-.footer-links {
-  display: flex;
-  align-items: center;
-}
-.footer-links a {
-  color: black;
-  opacity: 0.15;
-  text-decoration: none;
-  font-size: 24px;
-  padding: 0px 10px;
-}
-.footer-links a:hover {
-  opacity: 1;
-}
-.footer .fa-heart {
-  color: #D23333;
 }
