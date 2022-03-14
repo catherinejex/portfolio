@@ -1,10 +1,17 @@
-.footer-main body {
-  align-items: center;
-  height: 50px;
+.footer {
   background-color: #b5b592;
-  color: white;
+  align-items: center;
+  height: 60px;
+  padding: 0px 50px;
+  color: rgba(0,0,0,0.3);
 }
- .footer-copyright {
+
+.footer-copyright {
   text-align: center;
-  margin-top: 20px;
- }
+  color: white;
+  padding-top: 20px;
+}
+
+.min-height {
+  min-height: calc(100vh - 60px);
+}
