@@ -4,10 +4,14 @@
 
 .navbar-lewagon .navbar-brand img {
   width: 40px;
+  border-radius: 50%;
+  object-fit: cover;
 }
 
 .navbar-light .navbar-nav .nav-link {
- color: #f5f1ed;
+ color: white;
+ font-family: 'Raleway', sans-serif;
+ letter-spacing: 1px;
 }
 
 .navbar-lewagon {
@@ -15,6 +19,11 @@
   background: #b5b592;
   position: fixed;
   width: 100%;
+}
+
+.navbar-lewagon:hover {
+  color: #365B6D;
+  transition: 0.6;
 }
 
 .nav-link {
