@@ -1,0 +1,147 @@
+.cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding-top: 100px;
+}
+
+.card-category {
+  justify-content: center;
+  background-color: #F4F4F4;
+  align-items: center;
+  color: #B5B592;
+  font-family: 'Raleway', sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  border-radius: 5px;
+}
+
+.text-card {
+  text-align: center;
+  padding-top: 5px;
+}
+
+.bandmates img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  border-radius: 5px;
+  height: 230px;
+  object-fit: cover;
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+}
+
+.bandmates:hover img {
+  transform: scale(1.1);
+}
+
+.omnifood img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  border-radius: 5px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.omnifood:hover img {
+  transform: scale(1.1);
+}
+
+.venulet img {
+  width: 100%;
+  transition: 0.5s all ease-in-out;
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3));
+  border-radius: 5px;
+  height: 230px;
+  object-fit: cover;
+}
+
+.venulet:hover img {
+  transform: scale(1.1);
+}
+
+.my-portfolio {
+  font-size: 80px;
+  padding-top: 90px;
+  font-family: 'Cookie', cursive;
+  text-align: center;
+  color: #B5B592;
+  text-shadow: 2px 2px 2px #bbbbbb;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .cards {
+    grid-template-columns: 1fr;
+    margin: 10px 0 10px 0;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .cards {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
