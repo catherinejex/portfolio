@@ -3,6 +3,7 @@
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   padding-top: 100px;
+
 }
 
 .card-category {
@@ -20,6 +21,25 @@
 .text-card {
   text-align: center;
   padding-top: 5px;
+}
+
+.text-card a {
+  color: #B5B592;
+  text-decoration: none;
+}
+
+.cv-link {
+  color: #B5B592;
+  text-decoration: none;
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Raleway', sans-serif;
+}
+
+.portfolio-text {
+  color: #B5B592;
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
 }
 
 .bandmates img {
