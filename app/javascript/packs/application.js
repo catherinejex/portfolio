@@ -14,4 +14,4 @@ ActiveStorage.start()
 
 import "controllers"
 import "bootstrap"
-import modal from "channels"
+// import modal from "channels"
