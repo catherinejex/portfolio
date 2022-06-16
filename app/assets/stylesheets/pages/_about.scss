@@ -2,30 +2,23 @@
   width: 350px;
   height: 400px;
   border-radius: 50%;
-  border: 5px solid #A7AD98;
+  border: 5px solid #FFFFFF;
   object-fit: cover;
 }
 
 .about {
   padding-top: 90px;
   text-align: center;
-  // padding-bottom: 30px;
   font-family: 'Cookie', cursive;
   font-size: 80px;
-  color: #A7AD98;
-  text-shadow: 2px 2px 2px #bbbbbb;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #979797;
 }
 
-// .text {
-//   display: flex;
-//   align-items: center;
-//   p {
-//     padding-left: 40px;
-//     font-family: 'Raleway', sans-serif;
-//     font-size: 19px;
-//   }
-// }
-
+.bckgd {
+  background-size: cover;
+  background-position: center;
+}
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 992px) {
@@ -38,6 +31,7 @@
       font-family: 'Raleway', sans-serif;
       font-size: 19px;
       text-align: center;
+      color: #FFFFFF;
     }
     .me img {
       margin-bottom: 25px;
@@ -57,6 +51,7 @@
       font-family: 'Raleway', sans-serif;
       font-size: 19px;
       text-align: center;
+      color: #FFFFFF;
     }
   }
  .me {
