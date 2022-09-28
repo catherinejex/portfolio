@@ -16,12 +16,14 @@
 }
 
 .bckgd {
-  background-size: cover;
-  background-position: center;
+  background-color: #000000;
+  background-image: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2393&q=80);
+  background-size: contain;
 }
 
 // Smallest device
-@media (min-width: 100px) and (max-width: 992px) {
+@media (min-width: 100px)
+ {
   .text {
     align-items: center;
     display: flex;
