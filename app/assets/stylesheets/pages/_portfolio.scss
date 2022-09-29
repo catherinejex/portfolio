@@ -1,7 +1,14 @@
+.bckgd-port {
+  background-color: #000000;
+  background-image: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2393&q=80);
+  background-size: contain;
+  height: fit-content;
+}
+
 .cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 30px;
   padding-top: 30px;
 }
 
@@ -36,13 +43,7 @@
 }
 
 .cv-link:hover {
-  color: rgb(255, 255, 255);
-}
-
-.bckgd {
-  background-color: #000000;
-  background-image: url(https://images.unsplash.com/photo-1506318137071-a8e063b4bec0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2393&q=80);
-  background-size: contain;
+  color: #c4c4c4;
 }
 
 .portfolio-text {
@@ -146,16 +147,25 @@
   cursor: pointer;
 }
 
+.link-port {
+  list-style: none;
+  font-size: 80px;
+  padding-top: 90px;
+  font-family: 'Cookie', cursive;
+  text-align: center;
+  color: #FFFFFF;
+  text-shadow: 2px 2px 2px #737373;
+}
 
 // Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
+@media (min-width: 100px) {
   .cards {
     grid-template-columns: 1fr;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) and (max-width: 767px) {
+@media (min-width: 576px) {
   .cards {
     grid-template-columns: 1fr;
   }
@@ -166,11 +176,17 @@
   .cards {
     grid-template-columns: 1fr 1fr;
   }
+  .bckgd-port {
+    padding-bottom: 116px;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+  .bckgd-port {
+    padding-bottom: 116px;
   }
 }
