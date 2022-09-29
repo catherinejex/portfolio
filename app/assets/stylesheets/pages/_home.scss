@@ -5,20 +5,82 @@
   height: 100vh;
 }
 
-.banner h1 {
-  margin: 0;
+h1.glitch {
   color: #f5f1ed;
-  text-shadow: 5px 4px 3px rgba(0,0,0,0.2);
-  font-size: 150px;
-  font-family: 'Cookie', cursive;
+  font-family: 'Poiret One', cursive;
   text-align: center;
+  font-weight: 700;
+  font-size: 9rem;
+  text-transform: uppercase;
   padding-top: 150px;
+  text-shadow: 0.05em 0 0 rgba(0, 0, 0, 0.75),
+  -0.025em -0.05em 0 rgba(120, 120, 120, 0.75),
+  0.025em 0.05em 0 rgba(42, 124, 161, 0.75);
+
+  animation: glitch 800ms infinite;
+}
+
+.glitch span {
+  position: absolute;
+  top: 150;
+  left: 150;
+}
+
+.glitch span:first-child {
+  animation: glitch 650ms infinite;
+  clip-path: polygon(0 0, 100% 45%, 0 45%);
+  transform: translate(-0.025em, -0.025em);
+  opacity: 0.8;
+}
+.glitch span:last-child {
+  animation: glitch 375ms infinite;
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  transform: translate(.0125em, 0.025em);
+  opacity: 0.8;
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 rgba(0, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(120, 120, 120, 0.75),
+    -0.025em 0.05em 0 rgba(42, 124, 161, 0.75);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 rgba(0, 0, 0, 0.75),
+    -0.025em -0.05em 0 rgba(120, 120, 120, 0.75),
+    -0.025em 0.05em 0 rgba(42, 124, 161, 0.75);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 0, 0, 0.75),
+    0.025em 0.025em 0 rgba(120, 120, 120, 0.75),
+    -0.05em -0.05em 0 rgba(42, 124, 161, 0.75);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 rgba(0, 0, 0, 0.75),
+    0.025em 0.025em 0 rgba(120, 120, 120, 0.75),
+    -0.05em -0.05em 0 rgba(42, 124, 161, 0.75);
+  }
+  50% {
+    text-shadow: 0.025em 0 0 rgba(0, 0, 0, 0.75),
+    0.05em -0.05em 0 rgba(120, 120, 120, 0.75),
+    0 0.05em 0 rgba(42, 124, 161, 0.75);
+  }
+  99% {
+    text-shadow: 0.025em 0 0 rgba(0, 0, 0, 0.75),
+    0.05em -0.05em 0 rgba(120, 120, 120, 0.75),
+    0 0.05em 0 rgba(42, 124, 161, 0.75);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 rgba(0, 0, 0, 0.75),
+    -0.025em -0.025em 0 rgba(120, 120, 120, 0.75),
+    -0.025em -0.05em 0 rgba(42, 124, 161, 0.75);
+  }
+  
 }
 
 .banner p {
   font-size: 20px;
   color: white;
   opacity: .7;
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   text-align: center;
 }
