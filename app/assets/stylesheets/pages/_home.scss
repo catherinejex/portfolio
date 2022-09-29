@@ -5,7 +5,7 @@
   height: 100vh;
 }
 
-h1.glitch {
+.glitch {
   color: #f5f1ed;
   font-family: 'Poiret One', cursive;
   text-align: center;
@@ -13,11 +13,12 @@ h1.glitch {
   font-size: 9rem;
   text-transform: uppercase;
   padding-top: 150px;
+  position: relative;
   text-shadow: 0.05em 0 0 rgba(0, 0, 0, 0.75),
   -0.025em -0.05em 0 rgba(120, 120, 120, 0.75),
   0.025em 0.05em 0 rgba(42, 124, 161, 0.75);
 
-  animation: glitch 800ms infinite;
+  animation: glitch 1000ms infinite;
 }
 
 .glitch span {
@@ -29,12 +30,12 @@ h1.glitch {
 .glitch span:first-child {
   animation: glitch 650ms infinite;
   clip-path: polygon(0 0, 100% 45%, 0 45%);
-  transform: translate(-0.025em, -0.025em);
+  transform: translate(-0.025em, -0.0125em);
   opacity: 0.8;
 }
 .glitch span:last-child {
   animation: glitch 375ms infinite;
-  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  clip-path: polygon(0 80%, 100% 20%, 90% 100%, 0 100%);
   transform: translate(.0125em, 0.025em);
   opacity: 0.8;
 }
